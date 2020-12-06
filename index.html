@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name = "viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "bootstrap.css">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light smallnav">
+
+    <a class="navbar-brand smallnav" href="index.html">WeatherAnalysis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu" style>
+                <a class="dropdown-item" href="./VisualPages/clouds.html">Latitude v Cloudiness</a>
+                <a class="dropdown-item" href="./VisualPages/temp.html">Latitude v Temperature</a>
+                <a class="dropdown-item" href="./VisualPages/humidity.html">Latitude v Humidity</a>
+                <a class="dropdown-item" href="./VisualPages/winds.html">Latitude v Wind Speed</a>
+
+            </div>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Comparison</a>
+        </li>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+        </li>
+            <li class="nav-item finalli">
+            <a class="nav-link" href="#">Data</a>
+        </li>
+
+            <a class="navbar-brand" href="https://github.com/mgood13/Web-Design-Challenge" target="_blank">
+                    <img src="github_PNG83.png" width="30" height="30" alt="" loading="lazy" style="margin-left: 10px; padding: 3px;">
+                </a>
+      </ul>
+    </div>
+  </nav>
+
+
+     <div class="image">
+        <h1 class = landingtext >Welcome to Weather Data Analysis</h1>
+     </div>
+
+
+    <div>
+        <div class="jumbotron">
+  <h1 class="display-4">Latitude Vs</h1>
+  <p class="lead">The purpose of this project is to examine the relationship between weather and latitude. There is a generally held assumption that the further
+  away from the equator you are (increasing absolute value of latitude), the colder the weather will be. This project set out to examine this assumption.
+  We also assess a variety of other weather patterns along the way: Wind Speed, Cloudiness, and Humidity. </p>
+  <hr class="my-4">
+            <h4>Navigation</h4>
+            <hr class="my-4">
+            <p>
+                <ul>
+
+            <li>The <i> <b class = 'highlight'>Weather Analysis</b> </i> page brings the user back to the homepage (here).</li>
+            <li>The <i> <b class = 'highlight'>Plots</b> </i> dropdown contains links to each specific plot generated during this analysis. Each analysis was performed first for the whole earth
+            and then each hemisphere separately to observe any more granular trends in the data.</li>
+            <li>The <i> <b class = 'highlight'>Comparison</b> </i> tab contains all of the plots together side by side.</li>
+            <li>The <i> <b class = 'highlight'>Resources</b> </i> tab contains information about the resources that went into generating this dataset.</li>
+            <li>The <i> <b class = 'highlight'>Data</b> </i> tab allows visualization of the raw data used to generate the plots.</li>
+            <li>The <i> <b class = 'highlight'>Github</b> </i> symbol is a link to the code used to create the webpage.</li>
+
+        </ul>
+            </p>
+            <!-- Button trigger modal -->
+            <div class = 'text-center'>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" align = 'center'> Something Different? </button>
+                </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Something to Break Up The Monotony</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class = 'container-fluid'>
+              <div class = 'col-md-6 modalimage'>
+        <img src = './Images/motivationdemotivator.jpeg'>
+                  </div>
+              </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+    </div>
+
+
+<div>
+    <h2 align = 'center'>Visualizations</h2>
+    <hr class="my-4">
+     <div class = 'row'>
+    <div class = 'col-md-3' align = 'center'>
+     <div class="thumbnail">
+        <a href="./VisualPages/clouds.html">
+          <img src="./Images/World_Clouds.png" alt="Cloudiness" style="width:100%">
+          <div class="caption">
+            <h5 align = 'center'>Latitude v. Cloudiness</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+        <div class = 'col-md-3'>
+        <div class="thumbnail">
+        <a href="./VisualPages/humidity.html">
+          <img src="./Images/World_Humidity.png" alt="Humidity" style="width:100%">
+          <div class="caption">
+             <h5 align = 'center'>Latitude v. Humidity (%)</h5>
+          </div>
+        </a>
+      </div>
+        </div>
+        <div class = 'col-md-3'>
+        <div class="thumbnail">
+        <a href="./VisualPages/temp.html">
+          <img src="./Images/World_Temperature.png" alt="Temperature" style="width:100%">
+          <div class="caption">
+             <h5 align = 'center'>Latitude v. Temperature (F)</h5>
+          </div>
+        </a>
+      </div>
+        </div>
+        <div class = 'col-md-3'>
+        <div class="thumbnail">
+        <a href="./VisualPages/winds.html">
+          <img src="./Images/World_Wind.png" alt="Wind" style="width:100%">
+          <div class="caption">
+             <h5 align = 'center'>Latitude v. Wind Speed (mph)</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+         </div>
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+</html>
