@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name = "viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href = "bootstrap.css">
@@ -9,10 +9,8 @@
 </head>
 <body>
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <a class="navbar-brand" href="https://github.com/">
-    <img src="github_PNG83.png" width="30" height="30" alt="" loading="lazy">
-  </a>
-    <a class="navbar-brand" href="#">Home</a>
+
+    <a class="navbar-brand" href="#">WeatherAnalysis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,10 +21,11 @@
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
             <div class="dropdown-menu" style>
-                <a class="dropdown-item" href="#">Latitude v Cloudiness</a>
+                <a class="dropdown-item" href="index.html">Latitude v Cloudiness</a>
                 <a class="dropdown-item" href="#">Latitude v Temperature</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Summary Analysis</a>
+                <a class="dropdown-item" href="#">Latitude v Humidity</a>
+                <a class="dropdown-item" href="#">Latitude v Wind Speed</a>
+
             </div>
         </li>
 
@@ -34,15 +33,65 @@
         <li class="nav-item">
             <a class="nav-link" href="#">Comparison</a>
         </li>
+            </li>
             <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+        </li>
+            <li class="nav-item finalli">
             <a class="nav-link" href="#">Data</a>
         </li>
+
+            <a class="navbar-brand" href="https://github.com/mgood13/Web-Design-Challenge" target="_blank">
+                    <img src="github_PNG83.png" width="30" height="30" alt="" loading="lazy" style="margin-left: 10px; padding: 3px;">
+                </a>
       </ul>
     </div>
   </nav>
-     <div class="view image">
 
+
+     <div class="image">
+        <h1 class = landingtext>Welcome to Weather Data Analysis</h1>
      </div>
+
+
+    <div>
+        <div class="jumbotron">
+  <h1 class="display-4">Latitude Vs</h1>
+  <p class="lead">The purpose of this project is to examine the relationship between weather and latitude. There is a generally held assumption that the further
+  away from the equator you are (increasing absolute value of latitude), the colder the weather will be. This project set out to examine this assumption.
+  We also assess a variety of other weather patterns along the way: Wind Speed, Cloudiness, and Humidity. </p>
+  <hr class="my-4">
+            <h4>Navigation</h4>
+            <hr class="my-4">
+            <p>
+                <ul>
+
+            <li>The <i> <b class = 'highlight'>Weather Analysis</b> </i> page brings the user back to the homepage (here).</li>
+            <li>The <i> <b class = 'highlight'>Plots</b> </i> dropdown contains links to each specific plot generated during this analysis. Each analysis was performed first for the whole earth
+            and then each hemisphere separately to observe any more granular trends in the data.</li>
+            <li>The <i> <b class = 'highlight'>Comparison</b> </i> tab contains all of the plots together side by side.</li>
+            <li>The <i> <b class = 'highlight'>Resources</b> </i> tab contains information about the resources that went into generating this dataset.</li>
+            <li>The <i> <b class = 'highlight'>Data</b> </i> tab allows visualization of the raw data used to generate the plots.</li>
+            <li>The <i> <b class = 'highlight'>Github</b> </i> symbol is a link to the code used to create the webpage.</li>
+
+        </ul>
+            </p>
+</div>
+
+    </div>
+     <div>
+         <hr class="my-4">
+         <div class = 'row'>
+         <div class = 'col-3'></div>
+         <div class = 'col-3'></div>
+         <div class = 'col-3'></div>
+             <div class = 'col-3'></div>
+             
+         </div>
+         </div>
+
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
