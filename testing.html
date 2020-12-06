@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" name = "viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Weather Analysis</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href = "bootstrap.css">
     <link rel = "stylesheet" href = "style.css">
@@ -10,7 +10,7 @@
 <body>
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <a class="navbar-brand" href="#">WeatherAnalysis</a>
+    <a class="navbar-brand" href="testing.html">WeatherAnalysis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,10 +21,10 @@
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
             <div class="dropdown-menu" style>
-                <a class="dropdown-item" href="index.html">Latitude v Cloudiness</a>
-                <a class="dropdown-item" href="#">Latitude v Temperature</a>
-                <a class="dropdown-item" href="#">Latitude v Humidity</a>
-                <a class="dropdown-item" href="#">Latitude v Wind Speed</a>
+                <a class="dropdown-item" href="./VisualPages/clouds.html">Latitude v Cloudiness</a>
+                <a class="dropdown-item" href="./VisualPages/temp.html">Latitude v Temperature</a>
+                <a class="dropdown-item" href="./VisualPages/humidity.html">Latitude v Humidity</a>
+                <a class="dropdown-item" href="./VisualPages/winds.html">Latitude v Wind Speed</a>
 
             </div>
         </li>
@@ -87,7 +87,7 @@
      <div class = 'row'>
     <div class = 'col-md-3' align = 'center'>
      <div class="thumbnail">
-        <a href="#" target="_blank">
+        <a href="./VisualPages/clouds.html">
           <img src="./Images/World_Clouds.png" alt="Cloudiness" style="width:100%">
           <div class="caption">
             <h5 align = 'center'>Latitude v. Cloudiness</h5>
@@ -97,7 +97,7 @@
     </div>
         <div class = 'col-md-3'>
         <div class="thumbnail">
-        <a href="#" target="_blank">
+        <a href="./VisualPages/humidity.html">
           <img src="./Images/World_Humidity.png" alt="Humidity" style="width:100%">
           <div class="caption">
              <h5 align = 'center'>Latitude v. Humidity (%)</h5>
@@ -107,7 +107,7 @@
         </div>
         <div class = 'col-md-3'>
         <div class="thumbnail">
-        <a href="#" target="_blank">
+        <a href="./VisualPages/temp.html">
           <img src="./Images/World_Temperature.png" alt="Temperature" style="width:100%">
           <div class="caption">
              <h5 align = 'center'>Latitude v. Temperature (F)</h5>
@@ -117,7 +117,7 @@
         </div>
         <div class = 'col-md-3'>
         <div class="thumbnail">
-        <a href="#" target="_blank">
+        <a href="./VisualPages/winds.html">
           <img src="./Images/World_Wind.png" alt="Wind" style="width:100%">
           <div class="caption">
              <h5 align = 'center'>Latitude v. Wind Speed (mph)</h5>
