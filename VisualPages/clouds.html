@@ -23,8 +23,8 @@
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle smallnav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
             <div class="dropdown-menu" style>
-                <a class="dropdown-item smallnav" href="clouds.html">Latitude v Cloudiness</a>
                 <a class="dropdown-item smallnav" href="temp.html">Latitude v Temperature</a>
+                <a class="dropdown-item smallnav" href="clouds.html">Latitude v Cloudiness</a>
                 <a class="dropdown-item smallnav" href="humidity.html">Latitude v Humidity</a>
                 <a class="dropdown-item smallnav" href="winds.html">Latitude v Wind Speed</a>
 
@@ -95,11 +95,19 @@
     </div>
     <div class = 'col-md-2'>
         <h3 align = 'center'>Visualizations</h3>
+        <div class="thumbnail plot">
+            <a href="./VisualPages/humidity.html">
+                <img src="../Images/World_Temperature.png" alt="Temperature" style="width:100%">
+                <div class="caption">
+                <h6 align = 'center'>Latitude v. Temperature (F)</h6>
+                </div>
+            </a>
+        </div>
         <div class="thumbnail plotemphasis">
             <a href="./VisualPages/humidity.html">
                 <img src="../Images/World_Clouds.png" alt="Clouds" style="width:100%">
                 <div class="caption">
-                <h6 align = 'center'>Latitude v. Clouds</h6>
+                <h6 align = 'center'>Latitude v. Cloudiness (%)</h6>
                 </div>
             </a>
         </div>
@@ -111,14 +119,7 @@
                 </div>
             </a>
         </div>
-        <div class="thumbnail plot">
-            <a href="./VisualPages/humidity.html">
-                <img src="../Images/World_Temperature.png" alt="Temperature" style="width:100%">
-                <div class="caption">
-                <h6 align = 'center'>Latitude v. Temperature (F)</h6>
-                </div>
-            </a>
-        </div>
+
         <div class="thumbnail plot">
             <a href="./VisualPages/humidity.html">
                 <img src="../Images/World_Wind.png" alt="Winds" style="width:100%">
