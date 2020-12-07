@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name = "viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "bootstrap.css">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light smallnav">
+
+    <a class="navbar-brand smallnav" href="./index.html">WeatherAnalysis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand smallnav pagemark" href="#">Resources</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle smallnav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu" style>
+                <a class="dropdown-item smallnav" href="./VisualPages/temp.html">Latitude v Temperature</a>
+                <a class="dropdown-item smallnav" href="./VisualPages/clouds.html">Latitude v Cloudiness</a>
+                <a class="dropdown-item smallnav" href="./VisualPages/humidity.html">Latitude v Humidity</a>
+                <a class="dropdown-item smallnav" href="./VisualPages/winds.html">Latitude v Wind Speed</a>
+
+            </div>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link smallnav" href="./comparison.html">Comparison</a>
+        </li>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link smallnav" href="./resources.html">Resources</a>
+        </li>
+            <li class="nav-item finalli">
+            <a class="nav-link smallnav" href="./data.html">Data</a>
+        </li>
+
+            <a class="navbar-brand" href="https://github.com/mgood13/Web-Design-Challenge" target="_blank">
+                    <img src="./github_PNG83.png" width="30" height="30" alt="" loading="lazy" style="margin-left: 10px; padding: 3px;">
+                </a>
+      </ul>
+    </div>
+  </nav>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<div class = 'row'>
+    <div class = 'col-md-4'>
+        <div class="card text-white bg-primary mb-4" style=" margin: 1%">
+            <div class="card-header"><a href = "https://github.com/wingchen/citipy" target = '_blank'>Citipy</a></div>
+            <div class="card-body">
+                <h4 class="card-title" align = 'center'>Citipy</h4>
+                <p class="card-text">Citipy is the source for the city data used in this dataset. The creator of this dataset created a k-tree which allows for rapid
+                searching of the cities with their latitude and longitude data. The link above is for the Github page which can further explain the details of the dataset.</p>
+            </div>
+        </div>
+    </div>
+    <div class = 'col-md-4'>
+        <div class="card text-white bg-secondary mb-4" style=" margin: 1%">
+            <div class="card-header"><a href = "https://developers.google.com/maps/documentation" target = '_blank'>Google Maps API</a></div>
+            <div class="card-body">
+                <h4 class="card-title" align = 'center'>Google Maps API</h4>
+                <p class="card-text">The Google Maps API is an API which contain vast amounts of location data and usable maps. This API was used specifically in the
+                python program this website is based upon. It is used to generate google maps objects and is used to visualize a number of the cities in the Raw Data tab.</p>
+            </div>
+        </div>
+    </div>
+    <div class = 'col-md-4'>
+        <div class="card text-white bg-primary mb-4" style=" margin: 1%">
+            <div class="card-header"><a href = "https://openweathermap.org/api" target = '_blank'>Open Weather API</a></div>
+            <div class="card-body">
+                <h4 class="card-title" align = 'center'>Open Weather API</h4>
+                <p class="card-text">The Open Weather API was used to generate this dataset. It can be passed city names and will return an enormous number of weather
+                parameters of which we selected a few for this dataset.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div align = 'center'>
+    <div class="card text-white bg-success mb-3" style="max-width: 20rem; margin: 1%">
+            <div class="card-header"><a href = "https://github.com/mgood13/python-api-challenge" target = '_blank'>Python API Project</a></div>
+            <div class="card-body">
+                <h4 class="card-title" align = 'center'>Python API Project</h4>
+                <p class="card-text">The Python API project is the source of the visualizations shown on this website. It also shows the python code that was used
+                first to make api calls to the above APIs and then second to analyze the data. Further analysis of "ideal" weather patterns can be found in the
+                VacationPy section of the project.</p>
+            </div>
+        </div>
+        </div>
+
+
+
+
+</body>
