@@ -10,7 +10,7 @@ and Resources for the project. This is summarized below.
 
 
 <ul>
-    <li>The <i> <b class = 'highlight'>Weather Analysis</b> </i> page brings the user back to the homepage (here).</li>
+    <li>The <i> <b class = 'highlight'>Weather Analysis</b> </i> page brings the user back to the homepage.</li>
     <li>The <i> <b class = 'highlight'>Plots</b> </i> dropdown contains links to each specific plot generated during this analysis. Each analysis was performed first for the whole earth
     and then each hemisphere separately to observe any more granular trends in the data.</li>
     <li>The <i> <b class = 'highlight'>Comparison</b> </i> tab contains all of the plots together side by side.</li>
