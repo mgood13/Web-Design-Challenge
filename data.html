@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" name = "viewport" content="width=device-width, initial-scale=1">
-    <title>Weather Analysis</title>
+    <title>Weather Analysis Data</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href = "bootstrap.css">
     <link rel = "stylesheet" href = "style.css">
 </head>
 
 <body>
+<!-- The conserved navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light smallnav">
 
     <a class="navbar-brand smallnav" href="./index.html">WeatherAnalysis</a>
@@ -49,10 +50,15 @@
       </ul>
     </div>
   </nav>
+
+<!-- Helpful header to descibe the enormous table on this page -->
 <h2 align = 'center'>Raw Data</h2>
 <p align = 'center'>The data shown in the table below is all of the raw data used in the creation of the plots found on the rest of this site.</p>
+
+<!-- Add in a margin so that the table is more well defined. -->
 <div style = "margin: 5%; border: 1px solid #ffffff">
-<table border="1" class="dataframe table">
+  <!-- This table is directly imported from the python command pandas.df.to_html() -->
+  <table border="1" class="dataframe table">
   <thead>
     <tr style="text-align: right;">
       <th></th>

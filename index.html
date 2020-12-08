@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This sets the title of the webpage that appears on the tab heading. This section also contains the regular bootstrap callout and the special Darkly bootstrap
+    formatting. Finally, it contains our own style sheet for formatting specific elements. -->
     <meta charset="UTF-8" name = "viewport" content="width=device-width, initial-scale=1">
     <title>Weather Analysis</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href = "bootstrap.css">
     <link rel = "stylesheet" href = "style.css">
 </head>
+
 <body>
+<!-- This is our navbar. It will be commented here and then there are only minor changes to this for the rest of the pages. The only significant change is a small
+ subheading added to the upper left of the bar to indicate which page the user is on. -->
      <nav class="navbar navbar-expand-lg navbar-light bg-light smallnav">
 
+         <!-- This is the main link which takes you back to the homepage from each page -->
     <a class="navbar-brand smallnav" href="index.html">WeatherAnalysis</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
+<!-- This callout here indicates what happens when used on a smaller screen, essentially answering the question "What is collapsed together?" hence the name: navbar-collapse -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+        <!-- ml-auto places a list on the right side of the page -->
         <ul class="navbar-nav ml-auto">
+            <!-- This is a dropdown item. Plots is a list of the different analysis pages -->
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle smallnav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
             <div class="dropdown-menu" style>
@@ -29,14 +37,16 @@
             </div>
         </li>
 
-
+<!-- This is a link to the page which compares all of the plots on one page -->
         <li class="nav-item">
             <a class="nav-link smallnav" href="./comparison.html">Comparison</a>
         </li>
             </li>
+            <!-- This link is for the page which contains all of the Resources used by the initial analysis and this website. -->
             <li class="nav-item">
             <a class="nav-link smallnav" href="./resources.html">Resources</a>
         </li>
+            <!-- This link is for the raw data page -->
             <li class="nav-item finalli">
             <a class="nav-link smallnav" href="./data.html">Data</a>
         </li>
@@ -55,6 +65,7 @@
 
 
     <div>
+        <!-- This is the jumbotron item which contains the text on the bottom of the landing page. -->
         <div class="jumbotron">
   <h1 class="display-4">Latitude Vs</h1>
   <p class="lead">The purpose of this project is to examine the relationship between weather and latitude. There is a generally held assumption that the further
@@ -64,8 +75,8 @@
             <h4>Navigation</h4>
             <hr class="my-4">
             <p>
+            <!-- This list creates the list. Which explains to the user each element of the navbar -->
                 <ul>
-
             <li>The <i> <b class = 'highlight'>Weather Analysis</b> </i> page brings the user back to the homepage (here).</li>
             <li>The <i> <b class = 'highlight'>Plots</b> </i> dropdown contains links to each specific plot generated during this analysis. Each analysis was performed first for the whole earth
             and then each hemisphere separately to observe any more granular trends in the data.</li>
@@ -76,12 +87,12 @@
 
         </ul>
             </p>
-            <!-- Button trigger modal -->
+            <!-- This creates the modal which will ultimately be used to generate the small window for our image -->
             <div class = 'text-center'>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" align = 'center'> Something Different? </button>
-                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" align = 'center'> Something Different? </button>
+            </div>
 
-<!-- Modal -->
+<!-- Modal (popup window) -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -94,6 +105,8 @@
       <div class="modal-body">
           <div class = 'container-fluid'>
               <div class = 'col-md-6 modalimage'>
+
+                  <!-- We only treat the homeworks with the highest level of seriousness. -->
         <img src = './Images/motivationdemotivator.jpeg'>
                   </div>
               </div>
@@ -107,7 +120,7 @@
 
     </div>
 
-
+<!-- This section creates the visualization images at the bottom of the landing page. They all have the same structure with an image of the plot and the title. -->
 <div>
     <h2 align = 'center'>Visualizations</h2>
     <hr class="my-4">
@@ -158,7 +171,7 @@
     </div>
 
 
-
+<!-- Javascript -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
